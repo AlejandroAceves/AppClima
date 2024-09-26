@@ -1,7 +1,10 @@
 package com.example.appclima.data.model
 
-class Coordenadas {
-    data class Coordenadas (
+import android.os.Parcel
+import android.os.Parcelable
+
+
+data class Coordenadas (
         val lon : Double,
         var lat : Double
     ) : Parcelable {
@@ -30,4 +33,3 @@ class Coordenadas {
             }
         }
     }
-}

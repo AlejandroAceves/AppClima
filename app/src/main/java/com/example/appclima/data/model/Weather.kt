@@ -1,7 +1,10 @@
 package com.example.appclima.data.model
 
-class Weather {
-    data class Weather (
+import android.os.Parcel
+import android.os.Parcelable
+
+
+data class Weather (
         val id : Int,
         val main : String?,
         val description : String?,
@@ -37,4 +40,3 @@ class Weather {
         }
 
     }
-}

@@ -1,12 +1,15 @@
 package com.example.appclima.data.model
 
-class ForecastResponse {
-    class ForecastResponse(
+import android.os.Parcel
+import android.os.Parcelable
+
+
+class ForecastResponse(
         val cod: String?,
         val message: Int?,
         val cnt: Int?,
         val list: ArrayList<Forecast>?
-    ) : Parcelable{
+    ) : Parcelable {
         constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readValue(Int::class.java.classLoader) as? Int,
@@ -37,4 +40,3 @@ class ForecastResponse {
 
 
     }
-}

@@ -1,5 +1,8 @@
 package com.example.appclima.data.model
 
+import android.os.Parcel
+import android.os.Parcelable
+
 class MainWeather (private val temp: Double,
                    val feels_like: Double,
                    val temp_min : Double,

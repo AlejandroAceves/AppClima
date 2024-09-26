@@ -1,7 +1,10 @@
 package com.example.appclima.data.model
 
-class Forecast {
-    data class Forecast (
+import android.os.Parcel
+import android.os.Parcelable
+
+
+data class Forecast (
         val dt: Long,
         val main: ForecastMain?
     ): Parcelable {
@@ -30,4 +33,3 @@ class Forecast {
             }
         }
     }
-}
